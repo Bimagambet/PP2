@@ -40,3 +40,5 @@ print(txt)
 #6
 txt = "We are the so-called \"Vikings\" from the north."
 print(txt)
+
+#7
