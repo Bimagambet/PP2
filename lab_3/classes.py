@@ -21,6 +21,10 @@ class Shape():
     def __init__(self, a = 0, b = 0):
         self.length = a
         self.width = b
+        
+    def getShape(self):
+        self.length = int(input("jaz zaebal"))
+        self.width = int(input("sende jaz"))
     
     def area(self):
         print(self.length * self.width)
@@ -33,8 +37,11 @@ class Square():
         print(self.size ** 2)
 
 
+
 shape = Shape()
+shape.getShape()
 shape.area()
+
 
 square = Square(4)
 square.area()
