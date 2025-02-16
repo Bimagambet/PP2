@@ -1,33 +1,30 @@
 # task-1 
-from datetime import datetime, timedelta 
+import datetime
+cur_date = datetime.datetime.now()
+after_five_day = cur_date - datetime.timedelta(days=5)
+print(after_five_day)
 
-current_data = datetime.now() 
-new_data = current_data - timedelta(days=5) 
-print("Current data: ", current_data.strftime("%Y-%m-%d")) 
-print("New data: ", new_data.strftime("%Y-%m-%d")) 
- 
-# task-2 
-from datetime import datetime, timedelta 
 
-today = datetime.now().date() 
-yesterday = today - timedelta(days=1) 
-tomorrow = today + timedelta(days=1) 
-print("Yesterday: ", yesterday) 
-print("Today: ", today) 
-print("Tomorrow: ", tomorrow) 
- 
+# task-2
+import datetime
+today = datetime.datetime.now()
+yesterday = today - datetime.timedelta(days=1)
+tommorow = today + datetime.timedelta(days=1)
+
+print(yesterday.strftime("%Y-%B-%d"))
+print(today.strftime("%Y-%B-%d"))
+print(tommorow.strftime("%Y-%B-%d"))
+
+
 # task-3
-from datetime import datetime 
+import datetime
+cur_date = datetime.datetime.now()
+print(cur_date.replace(microsecond=0))
 
-current_datatime = datetime.now() 
-without_microseconds = current_datatime.replace(microsecond=0) 
-print("Current datatime: ", current_datatime) 
-print("Without Microseconds: ", without_microseconds) 
- 
+
 # task-4
-from datetime import datetime 
+import datetime
+firstdate = datetime.datetime(2025, 2, 12, 0, 0, 25)
+seconddate = datetime.datetime(2025, 2, 12, 0, 0, 0)
+print(abs(firstdate - seconddate).total_seconds())
 
-date1 = datetime(2024, 2, 1, 12, 0, 0) 
-date2 = datetime(2025, 2, 10, 14, 30, 0) 
-dif = abs((date2-date1).total_seconds()) 
-print("Difference in seconds: ", dif)
