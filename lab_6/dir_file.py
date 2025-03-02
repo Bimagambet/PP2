@@ -7,56 +7,56 @@ import os
 
 
 # task-1
-# def content_list(path):
-#     all_items = os.listdir(path)
+def content_list(path):
+    all_items = os.listdir(path)
     
-#     directories = []
-#     files = []
+    directories = []
+    files = []
     
-#     for zat in all_items:
-#         full_path = os.path.join(path, zat)
-#         if os.path.isdir(full_path):
-#             directories.append(zat)
-#         elif os.path.isfile(full_path):
-#             files.append(zat)
+    for zat in all_items:
+        full_path = os.path.join(path, zat)
+        if os.path.isdir(full_path):
+            directories.append(zat)
+        elif os.path.isfile(full_path):
+            files.append(zat)
     
-#     print("Directories:", directories)
-#     print("Files:", files)
-#     print("All items:", all_items)
+    print("Directories:", directories)
+    print("Files:", files)
+    print("All items:", all_items)
     
-# path = "."
-# content_list(path)
+path = "."
+content_list(path)
 
 # task-2
-# path = "sultan.txt"
-# # path = "."
-# print('Exist:', os.access(path, os.F_OK))
-# print('Readable:', os.access(path, os.R_OK))
-# print('Writable:', os.access(path, os.W_OK))
-# print('Executabler:', os.access(path, os.X_OK))
+path = "sultan.txt"
+# path = "."
+print('Exist:', os.access(path, os.F_OK))
+print('Readable:', os.access(path, os.R_OK))
+print('Writable:', os.access(path, os.W_OK))
+print('Executabler:', os.access(path, os.X_OK))
 
 # task-3
-# path = "names.txt"
-# if os.path.exists(path):
-#     print(os.path.dirname(path))
-#     print(os.path.basename(path))
-# else:
-#     print("path does't exist")
+path = "names.txt"
+if os.path.exists(path):
+    print(os.path.dirname(path))
+    print(os.path.basename(path))
+else:
+    print("path does't exist")
 
 # task-4
-# path = "names.txt"
+path = "names.txt"
 
-# with open(path, 'r') as file:
-#     lines = file.readlines()
-#     num = len(lines)
+with open(path, 'r') as file:
+    lines = file.readlines()
+    num = len(lines)
 
-# print(num)
+print(num)
 
 # task-5
-# list = [1,2,3,4,5,6,7]
-# with open('text_file.py', 'w') as file:
-#     for i in list:
-#         file.write(str(i) + '\n')
+list = [1,2,3,4,5,6,7]
+with open('text_file.py', 'w') as file:
+    for i in list:
+        file.write(str(i) + '\n')
         
 # task-6
 for i in range(65, 91):
@@ -78,6 +78,6 @@ if os.path.exists(file_path):
     else:
         print("Permition denied")
 else:
-    print("does not exist")
+    print("does not exists")
     
     
