@@ -20,6 +20,7 @@ s = int(input("Input the lenght of a side: "))
 a = s/2 * math.tan(math.pi/n)
 print("Are of the polygon is: ", math.ceil(n*a*s/2))
 
+
 # task-4
 import math
 b = int(input("Lenght of base: "))
